@@ -13,8 +13,10 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
+      autocomplete="off"
+      onsubmit="onSubmit()"
     >
-      <fieldset>
+      <fieldset class="input-group">
         <legend>Personal information</legend>
 
         <div class="form-field">
@@ -23,7 +25,6 @@
             type="text"
             name="usersurname"
             id="user-surname"
-            autocomplete="off"
             required
           >
         </div>
@@ -34,7 +35,6 @@
             type="text"
             name="username"
             id="user-name"
-            autocomplete="off"
             required
           >
         </div>
@@ -70,7 +70,7 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="input-group">
         <legend>Registration</legend>
 
         <div class="form-field">
@@ -79,9 +79,7 @@
             type="email"
             name="email"
             id="user-email"
-            autocomplete="off"
             placeholder="email@example.com"
-            multiple
             required
           >
         </div>
@@ -94,13 +92,12 @@
             id="user-password"
             minlength="6"
             maxlength="32"
-            autocomplete="off"
             required
           >
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="input-group">
         <legend>An interesting fact about you!</legend>
 
         <div class="form-field">
@@ -162,7 +159,7 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="input-group">
         <legend>Additional info:</legend>
 
         <div class="form-field">
@@ -179,7 +176,7 @@
         </div>
       </fieldset>
 
-      <button onsubmit="onSubmit()">Submit</button>
+      <button type="submit">Submit</button>
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
